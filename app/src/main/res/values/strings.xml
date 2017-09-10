@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MiApp</string>
+    <string name="mensaje_ingreso">Las credenciales son correctas</string>
+    <string name="mensaje_incorrecto_ingreso">Usuario o password incorrecto</string>
 </resources>
