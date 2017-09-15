@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText mEtUsername;
     private EditText mEtPassword;
-    private Button mBtnLogin;
+    private Button mBtnRegistro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
         mEtUsername = (EditText) findViewById(R.id.et_username);
         mEtPassword = (EditText) findViewById(R.id.et_password);
-        mBtnLogin = (Button) findViewById(R.id.btn_login);
+        mBtnRegistro = (Button) findViewById(R.id.btn_registrar);
 
-        mBtnLogin.setOnClickListener(new View.OnClickListener() {
+        mBtnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -41,12 +41,13 @@ public class MainActivity extends AppCompatActivity {
                 String userName = mEtUsername.getText().toString();
                 String password = mEtPassword.getText().toString();
 
-                if(userName.equals("AbelVasquezYuto") && password.equals("123456")){
+
+                /*if(userName.equals("AbelVasquezYuto") && password.equals("123456")){
                     Toast.makeText(MainActivity.this,R.string.mensaje_ingreso, Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Toast.makeText(MainActivity.this, R.string.mensaje_incorrecto_ingreso, Toast.LENGTH_SHORT).show();
-                }
+                }*/
             }
         });
 
