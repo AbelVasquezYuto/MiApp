@@ -24,9 +24,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.v(TAG,"estamos en onCreate");
 
+        /*
         mEtUsername = (EditText) findViewById(R.id.et_username);
         mEtPassword = (EditText) findViewById(R.id.et_password);
-        mBtnRegistro = (Button) findViewById(R.id.btn_registrar);
+        mBtnRegistro = (Button) findViewById(R.id.btn_registrar);*/
 
         mBtnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override

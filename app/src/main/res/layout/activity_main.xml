@@ -8,25 +8,19 @@
     android:orientation="vertical"
     tools:context="com.example.galaxytraining.miapp.MainActivity">
 
-    <LinearLayout
-        android:layout_margin="20dp"
+    <TextView android:text="Registro de Usuarios"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView android:text="Registro de Usuarios"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </LinearLayout>
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <TextView
@@ -40,7 +34,9 @@
         <EditText android:id="@+id/et_nombres"
             android:inputType="text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:maxLines="1"/>
 
     </LinearLayout>
 
@@ -57,7 +53,9 @@
         <EditText android:id="@+id/et_apellidos"
             android:inputType="text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:maxLines="1"/>
     </LinearLayout>
 
     <LinearLayout
@@ -73,12 +71,15 @@
         <EditText android:id="@+id/et_correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:maxLength="15"
+            android:maxLines="1"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -117,20 +118,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:background="@color/colorPrimaryDark"
+        android:text="ACEPTAR"
+        android:textColor="@android:color/background_light" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:text="ACEPTAR"
-            android:textColor="@android:color/background_light" />
-
-    </LinearLayout>
 </LinearLayout>
